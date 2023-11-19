@@ -1,7 +1,10 @@
 package dk.vv.common.data.transfer.objects.product;
 
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+
 import java.math.BigDecimal;
 
+@Schema(name = "Product")
 public class ProductDTO {
 
     private int id;
@@ -17,7 +20,6 @@ public class ProductDTO {
     private String description;
 
     private int supplierId;
-
 
 
     public ProductDTO() {

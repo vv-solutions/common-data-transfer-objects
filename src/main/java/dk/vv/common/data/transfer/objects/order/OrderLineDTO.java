@@ -1,9 +1,11 @@
 package dk.vv.common.data.transfer.objects.order;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 import java.math.BigDecimal;
 
+@Schema(name = "OrderLine")
 public class OrderLineDTO {
     private int id;
 

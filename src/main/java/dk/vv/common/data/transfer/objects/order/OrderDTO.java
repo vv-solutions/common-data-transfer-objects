@@ -1,11 +1,13 @@
 package dk.vv.common.data.transfer.objects.order;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
+@Schema(name = "Order")
 public class OrderDTO {
 
     private int id;

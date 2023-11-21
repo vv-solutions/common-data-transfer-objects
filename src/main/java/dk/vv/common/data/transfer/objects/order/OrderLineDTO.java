@@ -24,6 +24,9 @@ public class OrderLineDTO {
 
     private BigDecimal subTotal;
 
+    // values used for processing
+    private String productName;
+
     public OrderLineDTO() {
     }
 
@@ -99,6 +102,14 @@ public class OrderLineDTO {
 
     public void setSubTotal(BigDecimal subTotal) {
         this.subTotal = subTotal;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
     @Override

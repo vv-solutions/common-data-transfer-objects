@@ -1,10 +1,12 @@
 package dk.vv.common.data.transfer.objects.product;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 import java.math.BigDecimal;
 
 @Schema(name = "Product")
+@RegisterForReflection
 public class ProductDTO {
 
     private int id;

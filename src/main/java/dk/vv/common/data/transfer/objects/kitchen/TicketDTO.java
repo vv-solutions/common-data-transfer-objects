@@ -26,7 +26,10 @@ public class TicketDTO {
     private int status;
 
     @JsonManagedReference
-    Set<TicketLineDTO> ticketLines = new HashSet<>();
+    private Set<TicketLineDTO> ticketLines = new HashSet<>();
+
+    private LocalDateTime createStamp;
+
 
     public TicketDTO() {
     }
@@ -92,5 +95,13 @@ public class TicketDTO {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public LocalDateTime getCreateStamp() {
+        return createStamp;
+    }
+
+    public void setCreateStamp(LocalDateTime createStamp) {
+        this.createStamp = createStamp;
     }
 }

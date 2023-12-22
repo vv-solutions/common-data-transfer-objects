@@ -1,7 +1,7 @@
 package dk.vv.common.data.transfer.objects.common;
 
 public class AddressDTO {
-    private int id;
+    private Integer id;
 
     private int zipCode;
 
@@ -12,12 +12,11 @@ public class AddressDTO {
     public AddressDTO() {
     }
 
-
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

@@ -1,7 +1,10 @@
 package dk.vv.common.data.transfer.objects.delivery;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
 import java.time.LocalDateTime;
 
+@RegisterForReflection
 public class DeliveryDTO {
 
     private int id;

@@ -1,10 +1,12 @@
 package dk.vv.common.data.transfer.objects.customer;
 
 import dk.vv.common.data.transfer.objects.common.AddressDTO;
+import io.quarkus.runtime.annotations.RegisterForReflection;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@RegisterForReflection
 public class CustomerDTO {
 
 

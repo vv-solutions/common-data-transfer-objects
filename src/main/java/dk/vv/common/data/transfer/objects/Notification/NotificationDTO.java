@@ -1,5 +1,8 @@
 package dk.vv.common.data.transfer.objects.Notification;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
+@RegisterForReflection
 public class NotificationDTO {
     private int customerId;
 

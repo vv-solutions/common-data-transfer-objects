@@ -1,5 +1,8 @@
 package dk.vv.common.data.transfer.objects.common;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
+@RegisterForReflection
 public class AddressDTO {
     private Integer id;
 
